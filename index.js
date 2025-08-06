@@ -1,13 +1,15 @@
-// Desafio Classificador de nível de Herói
+// Desafio nível de Herói
 
-// 1. Variáveis para armazenar o nome e a quantidade de XP
+// Variáveis nome e a quantidade de XP
 let nomeHeroi = "Michel Noob";
-let xpHeroi = 8500; // Altere este valor para testar diferentes níveis
+let xpHeroi = 6500; 
 
-// 2. Variável para armazenar o nível do herói
+
+// Variável nível do herói
 let nivelHeroi;
 
-// 3. Estrutura de Decisão para classificar o herói com base na XP
+
+// Decisão herói com base na XP
 if (xpHeroi < 1000) {
   nivelHeroi = "Ferro";
 } else if (xpHeroi >= 1001 && xpHeroi <= 2000) {
@@ -26,11 +28,8 @@ if (xpHeroi < 1000) {
   nivelHeroi = "Radiante";
 }
 
-// 4. Laço de repetição (exemplo, opcional para este desafio)
-// Este laço pode ser usado para simular um crescimento de XP e nível.
-// Foram inseridos comentários para melhor compreensão.
-
-console.log("--- Simulação de Nível do Herói ---");
+// Nivel 
+console.log("*** Simulação de Nível ***");
 let xpAtual = 0;
 while (xpAtual <= xpHeroi) {
     let nivelSimulado;
@@ -51,14 +50,13 @@ while (xpAtual <= xpHeroi) {
     } else {
       nivelSimulado = "Radiante";
     }
-    // A cada 1000 de XP, exibe a mensagem de nível atual
+    
     if (xpAtual % 1000 === 0) {
         console.log(`O herói ${nomeHeroi} alcançou ${xpAtual} XP e está no nível de ${nivelSimulado}`);
     }
     xpAtual += 500; // Incrementa a XP para a próxima iteração
 }
-console.log("-------------------------------------");
+console.log("*****************************************************************************************");
 
-// 5. Saída Final do Desafio
-// Utiliza uma template string para formatar a mensagem de forma limpa e clara.
+// Saída 
 console.log(`O Herói de nome **${nomeHeroi}** está no nível de **${nivelHeroi}**`);
